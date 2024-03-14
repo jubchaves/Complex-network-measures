@@ -1,6 +1,6 @@
 
 Esse arquivo tem por objetivo detalhar as implementações das funções de análise de redes, comprovando sua eficiência. 
-1. Degree (grau do vértice)
+1. Degree (grau do vértice):
    
     def graus(hash):
         graus = []
