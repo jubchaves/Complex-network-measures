@@ -1,7 +1,6 @@
-Esse arquivo tem por objetivo detalhar as implementações das funções de análise de redes. 
 
+Esse arquivo tem por objetivo detalhar as implementações das funções de análise de redes, comprovando sua eficiência. 
 1. Degree (grau do vértice)
-
 def graus(hash):
     graus = []
     for i in range(len(hash)):
@@ -10,9 +9,7 @@ def graus(hash):
     return graus
 
 Para essa função, utilizou-se um hash, com chave igual ao nome do vértice, que guardava todos os seus vizinhos. Assim, para descobrir a quantos elementos cada vértice se ligava no grafo, bastou utilizar a função len(), dando o número de vizinhos. O output da função em questão é um vetor de tamanho n (sendo n o número de vértices), em que a iésima entrada corresponde ao grau do iésimo vértice. Comparando com a função nx.degree() da biblioteca Networkx, o resultado é o mesmo. 
-
 2. Shortest path length
-   
 def spl1(binaria, a, b):
     if a == b:
         return 0
